@@ -152,7 +152,7 @@ public class TextBuddy {
         showToUser(ADD_MESSAGE, textFile, content);
     }
     
-    public static void displayContent(String textFile) { // (String textFile, String command) {
+    private static void displayContent(String textFile) { // (String textFile, String command) {
         
         checkIfFileIsEmpty(textFile);
     }
@@ -168,7 +168,7 @@ public class TextBuddy {
         }
     }
     
-    public static void deleteContent(String textFile, String content) {
+    private static void deleteContent(String textFile, String content) {
         
         String trimContent;
         int lineNum;
@@ -188,13 +188,13 @@ public class TextBuddy {
         showToUser(DELETE_MESSAGE, textFile, message);
     }
     
-    public static void clearAllContent(String textFile) throws FileNotFoundException{
+    private static void clearAllContent(String textFile) throws FileNotFoundException{
     	
         fileContent.clear();
         showToUser(CLEAR_ALL_MESSAGE, textFile);
     }
     
-    public static boolean exitProgram(boolean result){
+    private static boolean exitProgram(boolean result){
         
         return false;
     }
