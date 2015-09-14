@@ -123,6 +123,9 @@ public class TextBuddy {
                 displayContent(textFile);
                 break;
                 
+            case "search":
+                break;
+                
             case "delete":
                 deleteContent(textFile, content);
                 saveToFile(textFile);
