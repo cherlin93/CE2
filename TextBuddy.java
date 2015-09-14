@@ -86,13 +86,13 @@ public class TextBuddy {
         System.exit(0);
     }
     
-    public static String getUserInput() {
+    private static String getUserInput() {
         
     	Scanner sc = new Scanner(System.in);
    		return sc.nextLine();
     }
     
-    public static boolean parseInputAndExecute(String textFile, String input) throws IOException{
+    private static boolean parseInputAndExecute(String textFile, String input) throws IOException{
         
         String content = null;
         String command = null;
@@ -148,7 +148,7 @@ public class TextBuddy {
     }
    
     
-    public static void addContent(String textFile, String content) throws IOException {
+    private static void addContent(String textFile, String content) throws IOException {
         
         fileContent.add(content);
         
